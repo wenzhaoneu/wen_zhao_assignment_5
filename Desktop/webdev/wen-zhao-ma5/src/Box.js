@@ -7,6 +7,7 @@ export default class Box extends React.Component{
         super(pros);
         this.state = {
             color: "white",
+            child_cnt: 0
             }
         }
     
@@ -16,10 +17,14 @@ export default class Box extends React.Component{
             this.setState({
                 color: "black",
             })
+            this.state.child_cnt = this.state.child_cnt + 1;
+            this.props.increase();
         }else {
             this.setState({
                 color: "white",
             })
+            this.state.child_cnt = this.state.child_cnt - 1;
+            this.props.decrease();
         }
     }
 
