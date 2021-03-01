@@ -7,7 +7,7 @@ the component to be rendered
 
 ### `Box.js`
 
-Child Component, 100*100 square.\
+Child Component creates 100*100 square.\
 Activate changeColor function when click event triggered.
 
 ### `Container.js`
