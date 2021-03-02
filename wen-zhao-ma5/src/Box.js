@@ -3,8 +3,8 @@ import React from 'react';
 
 export default class Box extends React.Component{
 
-    constructor(pros) {
-        super(pros);
+    constructor(props) {
+        super(props);
         this.state = {
             color: "white",
             child_cnt: 0
